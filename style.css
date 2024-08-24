@@ -1,0 +1,120 @@
+html {
+  box-sizing: border-box;
+  --backgroundColor: white;
+  --numberColor: white;
+  --accentColor: purple;
+  --buttonColor: #3bb54a;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.calculatorName,
+.quote {
+  display: flex;
+  justify-content: center;
+}
+
+.wholeCalculator {
+  display: grid;
+  margin: 1rem;
+  border: 0.125rem solid black;
+  background-color: var(--backgroundcolor);
+  max-width: 500px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.calculatedDisplay {
+  display: flex;
+  margin-left: 2rem;
+  font-size: 2rem;
+}
+
+.functionContainer,
+.buttonContainer {
+  display: grid;
+}
+
+.buttonContainer {
+  display: grid;
+  grid-template-areas:
+    "one two three addy"
+    "four five six subtracty"
+    "seven eight nine multiplyy"
+    "zeroy zeroy zeroy dividey"
+    "equals equals equals equals";
+  gap: 0.5rem;
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.button {
+  border: 2px solid var(--accentColor);
+  background-color: var(--buttonColor);
+  color: var(--numberColor);
+}
+
+.numberOne {
+  grid-area: one;
+}
+
+.numberTwo {
+  grid-area: two;
+}
+
+.numberThree {
+  grid-area: three;
+}
+
+.numberFour {
+  grid-area: four;
+}
+
+.numberFive {
+  grid-area: five;
+}
+
+.numberSix {
+  grid-area: six;
+}
+
+.numberSeven {
+  grid-area: seven;
+}
+
+.numberEight {
+  grid-area: eight;
+}
+
+.numberNine {
+  grid-area: nine;
+}
+
+.numberZero {
+  grid-area: zeroy;
+}
+
+.add {
+  grid-area: addy;
+}
+
+.subtract {
+  grid-area: subtracty;
+}
+
+.multiply {
+  grid-area: multiplyy;
+}
+
+.divide {
+  grid-area: dividey;
+}
+
+.equals {
+  grid-area: equals;
+}
