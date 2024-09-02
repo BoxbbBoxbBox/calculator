@@ -46,7 +46,7 @@ html {
     "four five six subtracty"
     "seven eight nine multiplyy"
     "zeroy zeroy zeroy dividey"
-    "equals equals equals equals";
+    "equals equals equals clear";
   gap: 0.5rem;
   align-items: center;
   text-align: center;
@@ -117,4 +117,8 @@ html {
 
 .equals {
   grid-area: equals;
+}
+
+.clear {
+  grid-area: clear;
 }
